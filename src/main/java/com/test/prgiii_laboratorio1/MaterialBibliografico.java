@@ -17,7 +17,7 @@ public class MaterialBibliografico implements Serializable {
     private String titulo;
     private String autor;
 
-    Scanner leer = new Scanner(System.in);
+    transient Scanner leer = new Scanner(System.in);
 
     //metodos
     public void registrar() {

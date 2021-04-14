@@ -47,7 +47,7 @@ public class Principal {
                     System.out.println("¡Registros Guardados!");
                     break;
                 case 5:
-                    //obj.leerMaterial();
+                    obj.leerMaterial();
                     obj.mostrarMaterial();
                     break;
                 case 6:

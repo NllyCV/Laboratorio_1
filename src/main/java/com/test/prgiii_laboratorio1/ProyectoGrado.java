@@ -7,6 +7,7 @@
 package com.test.prgiii_laboratorio1;
 
 import java.io.Serializable;
+import java.util.Scanner;
 
 public class ProyectoGrado extends MaterialBibliografico implements Serializable{
 
@@ -15,6 +16,8 @@ public class ProyectoGrado extends MaterialBibliografico implements Serializable
     //atributos
     private String tutor;
     private String revisor;
+    
+    transient Scanner leer = new Scanner(System.in);
 
     //metodos
     @Override

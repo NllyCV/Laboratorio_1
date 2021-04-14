@@ -24,7 +24,7 @@ import java.util.logging.Logger;
 public class OperacionesMaterial {
 
     List<MaterialBibliografico> listaMaterial;
-    Scanner leer = new Scanner(System.in);
+    transient Scanner leer = new Scanner(System.in);
 
     public OperacionesMaterial() {
         listaMaterial = new ArrayList<>();
@@ -169,9 +169,9 @@ public class OperacionesMaterial {
         try {
             if (!Files.exists(path)) {
                 Files.createFile(path);
-                System.out.println("Archivo creado");
+                System.out.println("\tArchivo creado");
             } else {
-                System.out.println("No se puede crear - El archivo ya existe");
+                System.out.println("\tNo se puede crear - El archivo ya existe");
             }
         } catch (Exception e) {
         }
